@@ -25,10 +25,11 @@ public class DialogueManager : MonoBehaviour {
     {
         if (!GlobalVariables.isDialogueHappening)
         {
+            sentences.Clear();
             animator.SetBool(trigger, true);
             nameText.text = dialogue.name;
             // Delete stored sentences
-            sentences.Clear();
+
             nextAnimator = dialogue.nextAnimator;
             // Add all sentences to the queue
             foreach (string sentence in dialogue.senetnces)

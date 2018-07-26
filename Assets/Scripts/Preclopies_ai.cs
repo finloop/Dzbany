@@ -13,8 +13,9 @@ public class Preclopies_ai : MonoBehaviour
     void Update()
     {
         Vector2 size = GetComponent<BoxCollider2D>().size;
-        Vector2 positiontopleft = transform.position;
+        Vector2 positiontopleft = new Vector2(transform.position.x - size.x/2, transform.position.y);
         Vector2 positiontopright = new Vector2(positiontopleft.x + size.x, positiontopleft.y);
+        
 
         Vector2 positiontopleftoff = new Vector2(positiontopleft.x - 0.1f, positiontopleft.y);
         Vector2 positiontoprightoff = new Vector2(positiontopright.x + 0.1f, positiontopright.y);
@@ -24,6 +25,8 @@ public class Preclopies_ai : MonoBehaviour
 
         RaycastHit2D leftdown = Physics2D.Raycast(positiontopleftoff, Vector2.down);
         RaycastHit2D rightdown = Physics2D.Raycast(positiontoprightoff, Vector2.down);
+
+
 
         if (left != null && left.collider != null && left.distance <= 0.3f && xMoveDirection < 0 && (left.collider.tag.Equals("Ground") ||  left.collider.tag.Equals("Enemy")))
         {
@@ -43,12 +46,12 @@ public class Preclopies_ai : MonoBehaviour
             }
 
         }
-        else if (leftdown != null && leftdown.collider != null && leftdown.distance >= 1f && xMoveDirection < 0 && leftdown.collider.tag.Equals("Ground"))
+        else if (leftdown != null && leftdown.collider != null && leftdown.distance >= 3f && xMoveDirection < 0 && leftdown.collider.tag.Equals("Ground"))
         {
             ChangeDirection();
 
         }
-        else if (rightdown != null && rightdown.collider != null && rightdown.distance >= 1f && xMoveDirection > 0 && rightdown.collider.tag.Equals("Ground"))
+        else if (rightdown != null && rightdown.collider != null && rightdown.distance >= 3f && xMoveDirection > 0 && rightdown.collider.tag.Equals("Ground"))
         {
             ChangeDirection();
 
