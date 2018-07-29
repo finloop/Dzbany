@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 212466186921888126}
   - component: {fileID: 95542369641713330}
   - component: {fileID: 61487945669323890}
-  - component: {fileID: 251421079862482368}
+  - component: {fileID: 251142555894558492}
   m_Layer: 0
   m_Name: Terrain_3_1
   m_TagString: Ground
@@ -132,7 +132,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!251 &251421079862482368
+--- !u!251 &251142555894558492
 PlatformEffector2D:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -144,7 +144,7 @@ PlatformEffector2D:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RotationalOffset: 0
-  m_UseOneWay: 1
+  m_UseOneWay: 0
   m_UseOneWayGrouping: 0
   m_SurfaceArc: 180
   m_UseSideFriction: 0

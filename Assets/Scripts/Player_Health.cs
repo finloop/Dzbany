@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Player_Health : MonoBehaviour {
+    
 
 	// Use this for initialization
 	void Start () {
@@ -14,7 +15,8 @@ public class Player_Health : MonoBehaviour {
 	void Update () {
         if(transform.position.y < -15)
         {
-            SceneManager.LoadScene("Scene/youdied");
+            SceneManager.LoadScene("Scenes/youdied");
         }
+        Debug.Log(transform.position.y);
 	}
 }

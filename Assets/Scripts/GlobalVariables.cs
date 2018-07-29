@@ -9,6 +9,8 @@ public class GlobalVariables : MonoBehaviour {
     public static bool isDialogueHappening = false;
     public static string lastScene = "Scenes/1";
 
+    public static int player_health;
+
     public void LoadLastScene()
     {
         SceneManager.LoadScene(lastScene);
