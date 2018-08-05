@@ -48,6 +48,7 @@ public class DialogueManager : MonoBehaviour {
     // Displays next sentence in a queue
     public void DisplayNextSentence()
     {
+        Debug.Log(isFinishedDisp);
         if(isFinishedDisp)
         {
             // ends dialogue if theres no sentences left

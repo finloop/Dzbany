@@ -128,8 +128,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c173f5fbc8e8b8f4e96ac9187ca0e8eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeLeftUI: {fileID: 0}
-  scoreUI: {fileID: 0}
 --- !u!114 &114793626579651316
 MonoBehaviour:
   m_ObjectHideFlags: 1

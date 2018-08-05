@@ -8,6 +8,7 @@ TagManager:
   - Enemy
   - SceneTrigger
   - PlayerRespawn
+  - Electro
   layers:
   - Default
   - TransparentFX

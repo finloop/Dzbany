@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Flappy_Movement : MonoBehaviour {
 	public int playerSpeed = 10;
@@ -52,5 +53,12 @@ public class Flappy_Movement : MonoBehaviour {
             transform.position = new Vector3(transform.position.x - 0.7f, transform.position.y, transform.position.z);
         }
         facingRight = !facingRight;
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag.Equals("Electro")) {
+            SceneManager.LoadScene("Scenes/youdied");
+        }
     }
 }

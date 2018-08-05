@@ -151,7 +151,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerSpeed: 10
-  playerJumpForce: 1250
+  playerJumpForce: 10
   moveX: 0
   isGrounded: 0
   maxSpeedHorizontal: 0
