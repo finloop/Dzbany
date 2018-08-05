@@ -8,9 +8,8 @@ public class GlobalVariables : MonoBehaviour {
     public static bool isPaused = false;
     public static bool isDialogueHappening = false;
     public static string lastScene = "Scenes/1";
-
     public static int player_health;
-
+    public static List<KeyValuePair<string, Vector3>> scenes_positions = new List<KeyValuePair<string, Vector3>>();
     public void LoadLastScene()
     {
         SceneManager.LoadScene(lastScene);
@@ -35,6 +34,7 @@ public class GlobalVariables : MonoBehaviour {
             lastScene = "Scenes/" + scene.name;
             isPaused = false;
             isDialogueHappening = false;
+            
             Debug.Log(lastScene);
         }
     }

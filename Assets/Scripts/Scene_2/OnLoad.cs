@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class OnLoad : MonoBehaviour {
+    public Transform position;
 
     void OnEnable()
     {
@@ -19,8 +20,15 @@ public class OnLoad : MonoBehaviour {
 
     void OnLevelFinishedLoading(Scene scene, LoadSceneMode mode)
     {
-			
-		StartCoroutine(start());
+    if(GlobalVariables.scenes_positions != null)
+    foreach (KeyValuePair<string, Vector3> kvp in GlobalVariables.scenes_positions ){
+        if(kvp.Key.Equals(scene.name)) {
+            position.position = kvp.Value;
+            return;
+        }
+    } 
+        StartCoroutine(start());
+    
     }
 
 	IEnumerator start() {

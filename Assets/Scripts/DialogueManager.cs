@@ -66,6 +66,7 @@ public class DialogueManager : MonoBehaviour {
     {
         animator.SetBool(trigger, false);
         GlobalVariables.isDialogueHappening = false;
+        
         if(nextAnimator != null)
         {
             nextAnimator.SetBool("isVisible", true);

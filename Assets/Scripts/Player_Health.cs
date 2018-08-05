@@ -17,6 +17,5 @@ public class Player_Health : MonoBehaviour {
         {
             SceneManager.LoadScene("Scenes/youdied");
         }
-        Debug.Log(transform.position.y);
 	}
 }

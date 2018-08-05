@@ -81,7 +81,7 @@ public class Preclopies_ai : MonoBehaviour
         } else
         {
             if(collision.collider.tag.Equals("Player"))
-            Destroy(collision.collider.gameObject);
+            SceneManager.LoadScene("Scenes/youdied");
         }
     }
 

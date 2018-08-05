@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 212976403334392000}
   - component: {fileID: 50005324904182000}
   - component: {fileID: 61678769929608808}
+  - component: {fileID: 114453367609595592}
   - component: {fileID: 114913473254770798}
   - component: {fileID: 114793626579651316}
   - component: {fileID: 114888594536756944}
@@ -116,6 +117,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fallMultiplier: 2.5
   lowJumpMultiplier: 2
+--- !u!114 &114453367609595592
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1320615745151992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c173f5fbc8e8b8f4e96ac9187ca0e8eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeLeftUI: {fileID: 0}
+  scoreUI: {fileID: 0}
 --- !u!114 &114793626579651316
 MonoBehaviour:
   m_ObjectHideFlags: 1
