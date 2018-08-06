@@ -23,10 +23,6 @@ public class Player_Movement : MonoBehaviour {
             Jump();
         //animation
         //player direction
-        if (moveX > 0.0f && !facingRight)
-            FlipPlayer();
-        else if (moveX < 0.0f && facingRight)
-            FlipPlayer();
         //phisics
         gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(moveX * playerSpeed, gameObject.GetComponent<Rigidbody2D>().velocity.y);
 
@@ -44,17 +40,4 @@ public class Player_Movement : MonoBehaviour {
 
 	}
 
-    void FlipPlayer()
-    {
-        if(facingRight)
-        {
-            transform.localRotation = Quaternion.Euler(0, 180, 0);
-            transform.position = new Vector3(transform.position.x + 0.7f, transform.position.y, transform.position.z);
-        } else if (!facingRight)
-        {
-            transform.localRotation = Quaternion.Euler(0, 0, 0);
-            transform.position = new Vector3(transform.position.x - 0.7f, transform.position.y, transform.position.z);
-        }
-        facingRight = !facingRight;
-    }
 }

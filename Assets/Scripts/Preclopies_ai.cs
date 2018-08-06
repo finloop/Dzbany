@@ -66,14 +66,19 @@ public class Preclopies_ai : MonoBehaviour
         Vector2 player_position = collision.collider.transform.position;
 
         
-        Vector2 player_size = collision.collider.GetComponent<BoxCollider2D>().size;
+        Vector2 player_size = collision.collider.GetComponent<BoxCollider2D>().size * collision.collider.gameObject.transform.localScale;
+        
 
-        player_position.y -= player_size.y -0.1f;
+        player_position.y -= player_size.y/2;
 
-        Vector2 vector = transform.position;
-        vector.y += GetComponent<BoxCollider2D>().size.y / 2;
+        Vector2 enemy_position = transform.position;
 
-        if (player_position.y >= vector.y)
+        Vector2 enemy_size = gameObject.GetComponent<BoxCollider2D>().size * gameObject.transform.localScale;
+
+        enemy_position.y += enemy_size.y/2;
+
+
+        if (player_position.y >= enemy_position.y)
         {
             Destroy(gameObject);
             collision.collider.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
