@@ -368,7 +368,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4573467422269624, guid: e9db26cf9be004500b1cdb34b8def37d, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -150.28
+      value: -151.43
       objectReference: {fileID: 0}
     - target: {fileID: 4573467422269624, guid: e9db26cf9be004500b1cdb34b8def37d, type: 2}
       propertyPath: m_LocalPosition.y
@@ -528,7 +528,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4573467422269624, guid: e9db26cf9be004500b1cdb34b8def37d, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -106.46487
+      value: -105.33
       objectReference: {fileID: 0}
     - target: {fileID: 4573467422269624, guid: e9db26cf9be004500b1cdb34b8def37d, type: 2}
       propertyPath: m_LocalPosition.y
@@ -1606,11 +1606,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4635507499632670, guid: 6a27c0f93bb776248ac7b226766e131d, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 37.39
+      value: 37.42
       objectReference: {fileID: 0}
     - target: {fileID: 4635507499632670, guid: 6a27c0f93bb776248ac7b226766e131d, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -2.72
+      value: -2.71
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a27c0f93bb776248ac7b226766e131d, type: 2}
@@ -2518,9 +2518,10 @@ GameObject:
   - component: {fileID: 1438927788}
   - component: {fileID: 1438927787}
   - component: {fileID: 1438927789}
+  - component: {fileID: 1438927790}
   m_Layer: 0
   m_Name: Entrance_0
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2596,6 +2597,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Scenes/3
+--- !u!61 &1438927790
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1438927786}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 4.93, y: 3.18}
+    newSize: {x: 4.93, y: 3.18}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 4.93, y: 3.18}
+  m_EdgeRadius: 0
 --- !u!1 &1563925365
 GameObject:
   m_ObjectHideFlags: 0
@@ -3260,7 +3286,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4573467422269624, guid: e9db26cf9be004500b1cdb34b8def37d, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -91.77994
+      value: -91.35
       objectReference: {fileID: 0}
     - target: {fileID: 4573467422269624, guid: e9db26cf9be004500b1cdb34b8def37d, type: 2}
       propertyPath: m_LocalPosition.y

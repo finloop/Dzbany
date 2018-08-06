@@ -14,3 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/youdied.unity
     guid: dfb7d8c0d67af894d8a3ecaa9bc6a829
+  - enabled: 1
+    path: Assets/Scenes/3.unity
+    guid: 5941d6d29174b4e47927dbae4622bb54
+  m_configObjects: {}
