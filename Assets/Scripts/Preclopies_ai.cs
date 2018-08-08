@@ -11,7 +11,7 @@ public class Preclopies_ai : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
+    {   if(!GlobalVariables.isPaused) {
         Vector2 size = GetComponent<BoxCollider2D>().size;
         Vector2 positiontopleft = new Vector2(transform.position.x - size.x/2, transform.position.y);
         Vector2 positiontopright = new Vector2(positiontopleft.x + size.x, positiontopleft.y);
@@ -58,7 +58,7 @@ public class Preclopies_ai : MonoBehaviour
         }
         gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(xMoveDirection, 0) * enemySpeed;
 
-
+    }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

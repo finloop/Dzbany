@@ -4,12 +4,13 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Flappy_Movement : MonoBehaviour {
-	public int playerSpeed = 10;
-	public int playerJumpForce = 1250;
+	public static int playerSpeed = 4;
+	public static int playerJumpForce = 5;
 	public float moveX;
     public bool isGrounded;
     public int maxSpeedHorizontal;
     public int maxSpeedVertical;
+    public static bool flappyMode = true;
 
     // Update is called once per frame
     void Update () {
@@ -30,7 +31,11 @@ public class Flappy_Movement : MonoBehaviour {
     }
 
 	void Jump() {
+            RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down);
+        if ( (hit != null && hit.collider != null && hit.distance < 1.27f && hit.collider.tag.Equals("Ground")) || flappyMode)
+        {
             GetComponent<Rigidbody2D>().velocity = Vector2.up * playerJumpForce;
+        }
         // jumping coded
         
 

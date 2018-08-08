@@ -41,6 +41,7 @@ public class DialogueManager : MonoBehaviour {
             nextDialogue = dialogue.nextDialogue;
             DisplayNextSentence();
             GlobalVariables.isDialogueHappening = true;
+            GlobalVariables.isPaused = true;
             
         }
     }
@@ -67,7 +68,7 @@ public class DialogueManager : MonoBehaviour {
     {
         animator.SetBool(trigger, false);
         GlobalVariables.isDialogueHappening = false;
-        
+        GlobalVariables.isPaused = false;
         if(nextAnimator != null)
         {
             nextAnimator.SetBool("isVisible", true);

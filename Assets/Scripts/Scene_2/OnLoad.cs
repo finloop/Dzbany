@@ -27,12 +27,12 @@ public class OnLoad : MonoBehaviour {
             return;
         }
     } 
-        StartCoroutine(start());
+    StartCoroutine(start());
     
     }
 
 	IEnumerator start() {
-		yield return new WaitForSecondsRealtime(2);
+		yield return new WaitForSecondsRealtime(1);
 					GetComponent<DialogueTrigger>().TriggerDialogue();
 	}
 }

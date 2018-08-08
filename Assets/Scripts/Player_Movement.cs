@@ -18,6 +18,7 @@ public class Player_Movement : MonoBehaviour {
 
 	void PlayerMove() {
         //CONTROLS
+        if (!GlobalVariables.isPaused) {
         moveX = Input.GetAxis("Horizontal");
         if (Input.GetAxis("Vertical")<0)
             Jump();
@@ -26,7 +27,7 @@ public class Player_Movement : MonoBehaviour {
         //phisics
         gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(moveX * playerSpeed, gameObject.GetComponent<Rigidbody2D>().velocity.y);
 
-
+        }
     }
 
 	void Jump() {

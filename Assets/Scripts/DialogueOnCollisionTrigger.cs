@@ -8,6 +8,7 @@ public class DialogueOnCollisionTrigger : MonoBehaviour {
     // Update is called once per frame
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        Debug.Log("Collision");
         dialogueTrigger.TriggerDialogue();
         Destroy(gameObject);
     }
