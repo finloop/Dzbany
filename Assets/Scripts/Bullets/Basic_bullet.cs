@@ -17,14 +17,15 @@ public class Basic_bullet : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-     
+      transform.RotateAroundLocal(Vector2.up, 5f * Time.deltaTime);
 	}
 
 	private void OnCollisionEnter2D(Collision2D collision)
     {
 		if(collision.gameObject.tag.Equals(destroyOnCollisionTag)) {
-			Destroy(collision.gameObject);
-		} else if(collision.gameObject.tag.Equals("Electro")) {
+			collision.gameObject.GetComponent<Player_Health>().TakeDamage(34);
+			Destroy(gameObject);
+		} else if(collision.gameObject.tag.Equals("Electro") || collision.gameObject.tag.Equals("Ground") || collision.gameObject.tag.Equals("NoDamage")) {
 			Destroy(gameObject);
 		}
 	}

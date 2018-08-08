@@ -32,12 +32,14 @@ public class Player_Health : MonoBehaviour
         health -= damage;
         Debug.Log(health);
         gameObject.tag = "NoDamage";
+		gameObject.GetComponent<SpriteRenderer>().color = Color.red;
         StartCoroutine(SetTag(gameObject));
     }
 
-    IEnumerator SetTag(GameObject o)
+    IEnumerator SetTag(GameObject gameObject)
     {
         yield return new WaitForSecondsRealtime(0.3f);
-        o.tag = "Player";
+        gameObject.tag = "Player";
+		gameObject.GetComponent<SpriteRenderer>().color = Color.white;
     }
 }

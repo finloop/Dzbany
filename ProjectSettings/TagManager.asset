@@ -10,6 +10,7 @@ TagManager:
   - PlayerRespawn
   - Electro
   - DialogueTrigger
+  - NoDamage
   layers:
   - Default
   - TransparentFX
@@ -20,9 +21,9 @@ TagManager:
   - 
   - 
   - Npcs
-  - 
-  - 
-  - 
+  - P_bullet
+  - E_bullet
+  - Player
   - 
   - 
   - 

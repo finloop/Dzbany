@@ -1464,7 +1464,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4078055024100706, guid: 6ef7e49290d904abea2fc69730f727b0, type: 2}
       propertyPath: m_LocalScale.y
-      value: 3.9007406
+      value: 3.1693518
       objectReference: {fileID: 0}
     - target: {fileID: 4078055024100706, guid: 6ef7e49290d904abea2fc69730f727b0, type: 2}
       propertyPath: m_LocalScale.x
@@ -1654,6 +1654,25 @@ Prefab:
     - target: {fileID: 4635507499632670, guid: 6a27c0f93bb776248ac7b226766e131d, type: 2}
       propertyPath: m_RootOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 212717212850964102, guid: 6a27c0f93bb776248ac7b226766e131d,
+        type: 2}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 212717212850964102, guid: 6a27c0f93bb776248ac7b226766e131d,
+        type: 2}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 212717212850964102, guid: 6a27c0f93bb776248ac7b226766e131d,
+        type: 2}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1807891110742830, guid: 6a27c0f93bb776248ac7b226766e131d, type: 2}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a27c0f93bb776248ac7b226766e131d, type: 2}
