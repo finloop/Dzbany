@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Players_bullet : MonoBehaviour {
 
-	public float bulletSpeed = 100f;
+	public float bulletSpeed = 100000f;
 	public string destroyOnCollisionTag = "Enemy";
 	public bool addedForce = false;
 
@@ -27,6 +27,9 @@ public class Players_bullet : MonoBehaviour {
 			collision.gameObject.GetComponent<Player_Health>().TakeDamage(34);
 			Destroy(gameObject);
 		} else if(collision.gameObject.tag.Equals("Electro") || collision.gameObject.tag.Equals("Ground") || collision.gameObject.tag.Equals("NoDamage")) {
+			Destroy(gameObject);
+		}else if (collision.gameObject.tag.Equals("Boss")) {
+			collision.gameObject.GetComponent<Enemy_Base>().health -= 20;
 			Destroy(gameObject);
 		}
 	}

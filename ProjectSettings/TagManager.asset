@@ -11,6 +11,7 @@ TagManager:
   - Electro
   - DialogueTrigger
   - NoDamage
+  - Boss
   layers:
   - Default
   - TransparentFX
@@ -24,7 +25,7 @@ TagManager:
   - P_bullet
   - E_bullet
   - Player
-  - 
+  - Enemy
   - 
   - 
   - 

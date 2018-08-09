@@ -6,7 +6,7 @@ public class Player_shoot : MonoBehaviour
 {
 
     public bool isSpawning = true;
-    public float interval = 0.3f;
+    public float interval = 0.6f;
     public bool spawnAtStart = true;
     private float time = 0.0f;
     // Use this for initialization

@@ -71,7 +71,7 @@ public class DialogueManager : MonoBehaviour {
         GlobalVariables.isPaused = false;
         if(nextAnimator != null)
         {
-            nextAnimator.SetBool("isVisible", true);
+            nextAnimator.SetBool("isVisible", !nextAnimator.GetBool("isVisible"));
             nextAnimator = null;
         }
 
