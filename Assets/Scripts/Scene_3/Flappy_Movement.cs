@@ -44,7 +44,7 @@ public class Flappy_Movement : MonoBehaviour {
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if(collision.gameObject.tag.Equals("Electro")) {
-            SceneManager.LoadScene("Scenes/youdied");
+            gameObject.GetComponent<Player_Health>().TakeDamage(50);
         }
     }
 }

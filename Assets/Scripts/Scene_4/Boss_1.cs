@@ -30,17 +30,13 @@ public class Boss_1 : MonoBehaviour
 
             if (!GlobalVariables.isPaused)
             {
-                Debug.Log("1");
                 Vector3 dir = player.transform.position - transform.position;
                 float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
                 transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
                 time += Time.deltaTime;
                 if (isSpawning & (time >= interval))
                 {
-                    Debug.Log("2");
                     GameObject spawnedEnemy = Instantiate(Resources.Load("Prefabs/Bullet"), transform.position, Quaternion.AngleAxis(angle, Vector3.forward)) as GameObject;
-
-
 
                     time = 0;
                 }
@@ -49,6 +45,8 @@ public class Boss_1 : MonoBehaviour
         }
         gameObject.GetComponent<Animator>().SetInteger("health", GetComponent<Enemy_Base>().health);
         if(GetComponent<Enemy_Base>().health <= 0) {
+            GameObject exit = GameObject.Find("Exit");
+            exit.GetComponent<DialogueTrigger>().TriggerDialogue();
             Destroy(gameObject);
         }
     }

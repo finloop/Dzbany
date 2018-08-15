@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Player_Health : MonoBehaviour
 {
-    public static int health = 100;
+    public static float health = 100;
 
 
     // Use this for initialization
@@ -30,15 +31,17 @@ public class Player_Health : MonoBehaviour
     public void TakeDamage(int damage)
     {
         health -= damage;
-        Debug.Log(health);
         gameObject.tag = "NoDamage";
 		gameObject.GetComponent<SpriteRenderer>().color = Color.red;
+        GameObject healthBar = GameObject.Find("Canvas/Mask/Health");
+        healthBar.GetComponent<Image>().fillAmount = 1f - (health/100f);
+        Debug.Log(healthBar.GetComponent<Image>().fillAmount);
         StartCoroutine(SetTag(gameObject));
     }
 
     IEnumerator SetTag(GameObject gameObject)
     {
-        yield return new WaitForSecondsRealtime(0.3f);
+        yield return new WaitForSecondsRealtime(0.4f);
         gameObject.tag = "Player";
 		gameObject.GetComponent<SpriteRenderer>().color = Color.white;
     }

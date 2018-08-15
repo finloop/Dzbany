@@ -69,7 +69,7 @@ public class Preclopies_ai : MonoBehaviour
         Vector2 player_size = collision.collider.GetComponent<BoxCollider2D>().size * collision.collider.gameObject.transform.localScale;
         
 
-        player_position.y -= player_size.y/2;
+        player_position.y -= player_size.y/2 - 0.1f;
 
         Vector2 enemy_position = transform.position;
 
@@ -100,7 +100,7 @@ public class Preclopies_ai : MonoBehaviour
         Vector2 player_size = collision.collider.GetComponent<BoxCollider2D>().size * collision.collider.gameObject.transform.localScale;
         
 
-        player_position.y -= player_size.y/2;
+        player_position.y -= player_size.y/2 - 0.1f;
 
         Vector2 enemy_position = transform.position;
 

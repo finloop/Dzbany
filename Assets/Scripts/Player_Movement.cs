@@ -38,7 +38,6 @@ public class Player_Movement : MonoBehaviour {
         }
         // jumping coded
         
-
 	}
 
 }
