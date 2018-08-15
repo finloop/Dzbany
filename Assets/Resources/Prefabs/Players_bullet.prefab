@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d7fd6410d43742feb35f099c1c344f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletSpeed: 400
+  bulletSpeed: 600
   destroyOnCollisionTag: Enemy
   addedForce: 0
 --- !u!212 &212535889025208390

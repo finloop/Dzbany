@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Players_bullet : MonoBehaviour {
 
-	public float bulletSpeed = 100000f;
+	public float bulletSpeed = 100f;
 	public string destroyOnCollisionTag = "Enemy";
 	public bool addedForce = false;
 

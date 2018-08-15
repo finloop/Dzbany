@@ -37,6 +37,8 @@ public class Boss_1 : MonoBehaviour
                 if (isSpawning & (time >= interval))
                 {
                     GameObject spawnedEnemy = Instantiate(Resources.Load("Prefabs/Bullet"), transform.position, Quaternion.AngleAxis(angle, Vector3.forward)) as GameObject;
+                    GameObject spawnedEnemy1 = Instantiate(Resources.Load("Prefabs/Bullet"), transform.position, Quaternion.AngleAxis(angle+45, Vector3.forward)) as GameObject;
+                    GameObject spawnedEnemy2 = Instantiate(Resources.Load("Prefabs/Bullet"), transform.position, Quaternion.AngleAxis(angle-45, Vector3.forward)) as GameObject;
 
                     time = 0;
                 }

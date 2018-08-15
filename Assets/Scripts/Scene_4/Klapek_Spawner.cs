@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Klapek_Spawner : MonoBehaviour {
 	public bool isSpawning = true;
-	public float interval = 0.5f;
+	public float interval = 0.2f;
 	public bool spawnAtStart = true;
 	private float time = 0.0f;
 	public float bulletSpeed = 100f;
