@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 212793338151393844}
   - component: {fileID: 61563753978121428}
   - component: {fileID: 114858806231695094}
+  - component: {fileID: 114851710145776178}
   - component: {fileID: 114732258424250310}
   m_Layer: 12
   m_Name: Pjoter
@@ -79,6 +80,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65ca53a18ee4643ed89a36ed56f2967e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114851710145776178
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1972185172924602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cb1b827cec7647569c87ca9e63cf582, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
 --- !u!114 &114858806231695094
 MonoBehaviour:
   m_ObjectHideFlags: 1

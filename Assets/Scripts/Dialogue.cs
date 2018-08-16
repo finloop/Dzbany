@@ -5,7 +5,7 @@ using UnityEngine;
 [System.Serializable]
 public class Dialogue {
 
-    //[TextArea(2,10)]
+    [TextArea(2,10)]
     public string[] senetnces;
     public string name;
     public Animator nextAnimator;

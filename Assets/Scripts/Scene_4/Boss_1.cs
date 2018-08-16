@@ -35,7 +35,7 @@ public class Boss_1 : MonoBehaviour
                 transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
                 time += Time.deltaTime;
                 if (isSpawning & (time >= interval))
-                {
+                {   
                     GameObject spawnedEnemy = Instantiate(Resources.Load("Prefabs/Bullet"), transform.position, Quaternion.AngleAxis(angle, Vector3.forward)) as GameObject;
                     GameObject spawnedEnemy1 = Instantiate(Resources.Load("Prefabs/Bullet"), transform.position, Quaternion.AngleAxis(angle+45, Vector3.forward)) as GameObject;
                     GameObject spawnedEnemy2 = Instantiate(Resources.Load("Prefabs/Bullet"), transform.position, Quaternion.AngleAxis(angle-45, Vector3.forward)) as GameObject;

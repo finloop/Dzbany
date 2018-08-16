@@ -81,8 +81,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     senetnces:
-    - Zaczekaj!
-    - "Dobra, dzbanie ja wy\u0142\u0105czam to latanie. "
+    - "Widzia\u0142e\u015B to?"
+    - "Tamte psy *hatfu* by\u0142y jako\u015B szybsze od innych. A toi oznacza tylko
+      jedno."
+    - "Precelki. S\u0105 tutaj."
     name: Kudi
     nextAnimator: {fileID: 0}
     nextDialogue: {fileID: 0}

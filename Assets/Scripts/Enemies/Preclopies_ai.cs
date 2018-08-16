@@ -28,7 +28,7 @@ public class Preclopies_ai : MonoBehaviour
 
 
 
-        if (left != null && left.collider != null && left.distance <= 0.3f && xMoveDirection < 0 && (left.collider.tag.Equals("Ground") ||  left.collider.tag.Equals("Enemy")))
+        if (left != null && left.collider != null && left.distance <= 0.3f && xMoveDirection < 0 && (left.collider.tag.Equals("Ground") ||  left.collider.tag.Equals("Enemy") || left.collider.tag.Equals("Electro")))
         {
             ChangeDirection();
             if (left.collider.tag.Equals("Enemy"))
@@ -37,7 +37,7 @@ public class Preclopies_ai : MonoBehaviour
             }
 
         }
-        else if (right != null && right.collider != null  && right.distance <= 0.3f && xMoveDirection > 0 && (right.collider.tag.Equals("Ground") || right.collider.tag.Equals("Enemy")))
+        else if (right != null && right.collider != null  && right.distance <= 0.3f && xMoveDirection > 0 && (right.collider.tag.Equals("Ground") || right.collider.tag.Equals("Enemy") || right.collider.tag.Equals("Electro")))
         {
             ChangeDirection();
             if (right.collider.tag.Equals("Enemy"))

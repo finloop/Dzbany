@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4967620923937096}
   - component: {fileID: 212656155742145590}
   - component: {fileID: 114103966245232990}
+  - component: {fileID: 114688544238219788}
   - component: {fileID: 61894268370176640}
   - component: {fileID: 50324730955458526}
   m_Layer: 12
@@ -101,6 +102,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemySpeed: 4
   xMoveDirection: 1
+--- !u!114 &114688544238219788
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1263429640485608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cb1b827cec7647569c87ca9e63cf582, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
 --- !u!212 &212656155742145590
 SpriteRenderer:
   m_ObjectHideFlags: 1

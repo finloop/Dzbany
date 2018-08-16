@@ -155,7 +155,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2.4361882, y: 1.623}
+  m_AnchoredPosition: {x: -2.3, y: 1.49}
   m_SizeDelta: {x: 6.96, y: 1.197}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &107133187
@@ -299,7 +299,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -678,7 +678,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 08b878eab9b00c14cbbe62fedf0cdd63, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -835,7 +835,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 08b878eab9b00c14cbbe62fedf0cdd63, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1326,7 +1326,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2.4361882, y: 1.623}
+  m_AnchoredPosition: {x: -2.3, y: 1.4225}
   m_SizeDelta: {x: 6.96, y: 1.197}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &678098812
@@ -1342,7 +1342,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1384,7 +1384,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1447,8 +1447,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0037364769, y: -0.4302354}
-  m_SizeDelta: {x: 19.475, y: 6.363}
+  m_AnchoredPosition: {x: -0.083, y: -0.354}
+  m_SizeDelta: {x: 18.583, y: 5.857}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &831018680
 GameObject:
@@ -1950,13 +1950,12 @@ MonoBehaviour:
   dialogue:
     senetnces:
     - "W\u0142a\u015Bciwie mia\u0142em spyta\u0107 o to samo. Zatrzyma\u0142em si\u0119
-      tutaj bo nie chcia\u0142o mi si\u0119 dalej i\u015B\u0107 pieszo. "
-    - "Noszenie tego sto\u0142u na plecach nie jest takie \u0142atwe na jakie wygl\u0105da."
+      tutaj bo nie chcia\u0142o mi si\u0119 dalej i\u015B\u0107 pieszo. Noszenie tego
+      sto\u0142u na plecach nie jest takie \u0142atwe na jakie wygl\u0105da."
     - "My\u015Bla\u0142em kiedy\u015B o kupnie konia, ale co\u015B czuj\u0119 \u017Ce
       zjad\u0142by wszystkie moje precelki.."
     - Oho...
-    - "Co\u015B ci wibruje w kieszeni.."
-    - "( \u0361\xB0 \u035C\u0296 \u0361\xB0)"
+    - "Co\u015B ci wibruje w kieszeni.. ( \u0361\xB0 \u035C\u0296 \u0361\xB0)"
     name: Lordozo
     nextAnimator: {fileID: 0}
     nextDialogue: {fileID: 282896448}
@@ -2118,8 +2117,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.003736496, y: -0.43023682}
-  m_SizeDelta: {x: 19.475, y: 6.363}
+  m_AnchoredPosition: {x: -0.05, y: -0.35}
+  m_SizeDelta: {x: 18.753, y: 5.641}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1183565430
 MonoBehaviour:
@@ -2134,7 +2133,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2683,12 +2682,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     senetnces:
-    - "Nazywam si\u0119 Lordozo. Prowadz\u0119 tu ma\u0142y rodzinny interes. To dzi\u0119ki
-      niemu moge podr\xF3\u017Cowa\u0107 po \u015Bwiecie no i oczywi\u015Bcie jest
-      te\u017C powodem dla kt\xF3rego tu jestem. "
-    - "Gdy b\u0119dziesz mia\u0142 kiedy\u015B jakie\u015B precelki mo\u017Cesz je
-      u mnie wymieni\u0107 na przer\xF3\u017Cne przedmioty, albo odwrotnie. W\u0142a\u015Bciwie
-      to wszystko mo\u017Cesz u mnie wymieni\u0107 na precelki. "
+    - "Nazywam si\u0119 Lordozo. Jak widzisz prowadz\u0119 tu ma\u0142y rodzinny interes.
+      Podr\xF3\u017Cuj\u0119 z miejsca na miejsce wymieniaj\u0105c precelki."
+    - "Widz\u0119, \u017Ce nie masz \u017Cadnych precelk\xF3w. No c\xF3\u017A, tu
+      nie ma nic za darmo. Przynie\u015B mi legendarne s\u0142one branzolety to pomy\u015Blimy
+      o jakiej\u015B nagrodzie."
     name: Lordozo
     nextAnimator: {fileID: 0}
     nextDialogue: {fileID: 0}
