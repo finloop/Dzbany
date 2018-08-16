@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 114103966245232990}
   - component: {fileID: 61894268370176640}
   - component: {fileID: 50324730955458526}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Preclopies_0
   m_TagString: Enemy
   m_Icon: {fileID: 0}

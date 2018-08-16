@@ -24,7 +24,10 @@ public class Players_bullet : MonoBehaviour {
 	private void OnCollisionEnter2D(Collision2D collision)
     {
 		if(collision.gameObject.tag.Equals(destroyOnCollisionTag)) {
-			collision.gameObject.GetComponent<Player_Health>().TakeDamage(34);
+			collision.gameObject.GetComponent<Enemy_Base>().health -= 20;
+			if(collision.gameObject.GetComponent<Enemy_Base>().health <= 0) {
+				Destroy(collision.gameObject);
+			}
 			Destroy(gameObject);
 		} else if(collision.gameObject.tag.Equals("Electro") || collision.gameObject.tag.Equals("Ground") || collision.gameObject.tag.Equals("NoDamage")) {
 			Destroy(gameObject);
