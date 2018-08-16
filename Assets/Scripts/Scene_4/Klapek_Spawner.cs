@@ -12,7 +12,7 @@ public class Klapek_Spawner : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		if(spawnAtStart) {
-			GameObject spawnedEnemy = Instantiate(Resources.Load("Prefabs/Scene_4/Bullet"),transform.position, transform.rotation) as GameObject;
+			GameObject spawnedEnemy = Instantiate(Resources.Load("Prefabs/Bullet"),transform.position, transform.rotation) as GameObject;
 			spawnedEnemy.GetComponent<Rigidbody2D>().gravityScale = 0;
 			spawnedEnemy.GetComponent<Rigidbody2D>().AddRelativeForce(Vector2.right * bulletSpeed);
 		}
@@ -23,7 +23,7 @@ public class Klapek_Spawner : MonoBehaviour {
 	void Update () {
 		time += Time.deltaTime;
 		if(isSpawning& (time >= interval)) {
-			GameObject spawnedEnemy = Instantiate(Resources.Load("Prefabs/Scene_4/Bullet"),transform.position, transform.rotation) as GameObject;
+			GameObject spawnedEnemy = Instantiate(Resources.Load("Prefabs/Bullet"),transform.position, transform.rotation) as GameObject;
 			spawnedEnemy.GetComponent<Rigidbody2D>().gravityScale = 0;
 			spawnedEnemy.GetComponent<Rigidbody2D>().AddRelativeForce(Vector2.right * bulletSpeed);
 			time = 0;	
