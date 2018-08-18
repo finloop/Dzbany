@@ -48,13 +48,13 @@ public class Preclopies_ai : MonoBehaviour
             }
 
         }
-        else if (leftdown != null && leftdown.collider != null && leftdown.distance >= 3f && xMoveDirection < 0 && leftdown.collider.tag.Equals("Ground"))
-        {
+        else if (leftdown != null && leftdown.collider != null && leftdown.distance >= 3f && xMoveDirection < 0 && (leftdown.collider.tag.Equals("Ground") || leftdown.collider.tag.Equals("Enemy") || leftdown.collider.tag.Equals("Electro")))
+            {
             ChangeDirection();
 
         }
-        else if (rightdown != null && rightdown.collider != null && rightdown.distance >= 3f && xMoveDirection > 0 && rightdown.collider.tag.Equals("Ground"))
-        {
+        else if (rightdown != null && rightdown.collider != null && rightdown.distance >= 3f && xMoveDirection > 0 && (rightdown.collider.tag.Equals("Ground") || rightdown.collider.tag.Equals("Enemy") || rightdown.collider.tag.Equals("Electro")))
+            {
             ChangeDirection();
 
         }

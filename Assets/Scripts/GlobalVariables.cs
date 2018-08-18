@@ -35,7 +35,6 @@ public class GlobalVariables : MonoBehaviour {
             isPaused = false;
             isDialogueHappening = false;
             
-            Debug.Log(lastScene);
         }
     }
 

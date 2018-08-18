@@ -10,7 +10,6 @@ public class DialogueTrigger : MonoBehaviour {
 
     public void TriggerDialogue()
     {
-        Debug.Log("Starting dialogue...");
         dialogueManager.StartDialogue(dialogue);
     }
 }

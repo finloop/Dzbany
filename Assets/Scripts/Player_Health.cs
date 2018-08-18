@@ -35,7 +35,6 @@ public class Player_Health : MonoBehaviour
 		gameObject.GetComponent<SpriteRenderer>().color = Color.red;
         GameObject healthBar = GameObject.Find("Canvas/Mask/Health");
         healthBar.GetComponent<Image>().fillAmount = 1f - (health/100f);
-        Debug.Log(healthBar.GetComponent<Image>().fillAmount);
         StartCoroutine(SetTag(gameObject));
     }
 
