@@ -10,6 +10,7 @@ public class GlobalVariables : MonoBehaviour {
     public static string lastScene = "Scenes/1";
     public static int player_health;
     public static List<KeyValuePair<string, Vector3>> scenes_positions = new List<KeyValuePair<string, Vector3>>();
+    public static bool cheatMode = false;
     public void LoadLastScene()
     {
         SceneManager.LoadScene(lastScene);

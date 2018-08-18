@@ -30,12 +30,16 @@ public class Player_Health : MonoBehaviour
     }
     public void TakeDamage(int damage)
     {
-        health -= damage;
-        gameObject.tag = "NoDamage";
-		gameObject.GetComponent<SpriteRenderer>().color = Color.red;
-        GameObject healthBar = GameObject.Find("Canvas/Mask/Health");
-        healthBar.GetComponent<Image>().fillAmount = 1f - (health/100f);
-        StartCoroutine(SetTag(gameObject));
+        if(gameObject.tag.Equals("Player"))
+        {
+            health -= damage;
+            gameObject.tag = "NoDamage";
+            gameObject.GetComponent<SpriteRenderer>().color = Color.red;
+            GameObject healthBar = GameObject.Find("Canvas/Mask/Health");
+            healthBar.GetComponent<Image>().fillAmount = 1f - (health / 100f);
+            StartCoroutine(SetTag(gameObject));
+        }
+
     }
 
     IEnumerator SetTag(GameObject gameObject)

@@ -10,9 +10,16 @@ public class Player_Movement : MonoBehaviour {
     public bool isGrounded;
     public int maxSpeedHorizontal;
     public int maxSpeedVertical;
+    public bool canDoubleJump;
 
     // Update is called once per frame
     void Update () {
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down);
+        if (hit != null && hit.collider != null && hit.distance < 1.27f && hit.collider.tag.Equals("Ground"))
+            isGrounded = true;
+        else
+            isGrounded = false;
+
         PlayerMove();
     }
 
@@ -31,16 +38,26 @@ public class Player_Movement : MonoBehaviour {
     }
 
 	void Jump() {
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down);
-        if (hit != null && hit.collider != null && hit.distance < 1.27f && hit.collider.tag.Equals("Ground"))
+       
+     if(isGrounded || canDoubleJump)
         {
             GetComponent<Rigidbody2D>().velocity = Vector2.up * playerJumpForce;
+            canDoubleJump = false;
         }
+
         // jumping coded
         
 	}
 
     private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag.Equals("Electro"))
+        {
+            gameObject.GetComponent<Player_Health>().TakeDamage(50);
+        }
+    }
+
+    private void OnCollisionStay2D(Collision2D collision)
     {
         if (collision.gameObject.tag.Equals("Electro"))
         {

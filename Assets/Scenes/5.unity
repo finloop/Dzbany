@@ -1392,8 +1392,8 @@ MonoBehaviour:
     - "My\u015Bla\u0142em, \u017Ce mog\u0119 uciec tutaj, ale najpierw jaki\u015B
       kole\u015B zacz\u0105\u0142 rzuca\u0107 we mnie klapkami."
     - "A p\xF3\u017Aniej to ju\u017C.. zlecia\u0142y si\u0119 tu te *hatfu*. ja tu
-      sobie z tymi poradz\u0119 a ty zabij te kt\xF3re spotkasz. Mo\u017Ce kiedy\u015B
-      Ci si\u0119 odwdzi\u0119cz\u0119."
+      sobie z tymi poradz\u0119 a ty zabij te kt\xF3re spotkasz. "
+    - "Mo\u017Ce kiedy\u015B Ci si\u0119 odwdzi\u0119cz\u0119."
     name: Lordozo
     nextAnimator: {fileID: 1774485439}
     nextDialogue: {fileID: 1774485438}

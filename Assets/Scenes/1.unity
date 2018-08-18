@@ -332,7 +332,7 @@ GameObject:
   - component: {fileID: 223744388}
   - component: {fileID: 223744387}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: Canvas 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -755,6 +755,115 @@ Prefab:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc307996de0450f4f9ae095a2f94ea6e, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!1001 &334021212
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 224024520555650186, guid: b39e0aab8c55dfc43af885166fdd562c,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 23
+      objectReference: {fileID: 0}
+    - target: {fileID: 224024520555650186, guid: b39e0aab8c55dfc43af885166fdd562c,
+        type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224024520555650186, guid: b39e0aab8c55dfc43af885166fdd562c,
+        type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224024520555650186, guid: b39e0aab8c55dfc43af885166fdd562c,
+        type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224024520555650186, guid: b39e0aab8c55dfc43af885166fdd562c,
+        type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224024520555650186, guid: b39e0aab8c55dfc43af885166fdd562c,
+        type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224024520555650186, guid: b39e0aab8c55dfc43af885166fdd562c,
+        type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224024520555650186, guid: b39e0aab8c55dfc43af885166fdd562c,
+        type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224024520555650186, guid: b39e0aab8c55dfc43af885166fdd562c,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 23
+      objectReference: {fileID: 0}
+    - target: {fileID: 224024520555650186, guid: b39e0aab8c55dfc43af885166fdd562c,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224024520555650186, guid: b39e0aab8c55dfc43af885166fdd562c,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224024520555650186, guid: b39e0aab8c55dfc43af885166fdd562c,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224024520555650186, guid: b39e0aab8c55dfc43af885166fdd562c,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224024520555650186, guid: b39e0aab8c55dfc43af885166fdd562c,
+        type: 2}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224024520555650186, guid: b39e0aab8c55dfc43af885166fdd562c,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224024520555650186, guid: b39e0aab8c55dfc43af885166fdd562c,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224024520555650186, guid: b39e0aab8c55dfc43af885166fdd562c,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224024520555650186, guid: b39e0aab8c55dfc43af885166fdd562c,
+        type: 2}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224024520555650186, guid: b39e0aab8c55dfc43af885166fdd562c,
+        type: 2}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1929940228020818, guid: b39e0aab8c55dfc43af885166fdd562c, type: 2}
+      propertyPath: m_Name
+      value: Canvas
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b39e0aab8c55dfc43af885166fdd562c, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1 &383976892
 GameObject:
