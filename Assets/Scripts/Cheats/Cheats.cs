@@ -73,5 +73,13 @@ public class Cheats : MonoBehaviour {
         {
             SceneManager.LoadScene("Scenes/6");
         }
+        else if (Input.GetKeyDown(KeyCode.Alpha7))
+        {
+            SceneManager.LoadScene("Scenes/7");
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha8))
+        {
+            SceneManager.LoadScene("Scenes/8");
+        }
     }
 }
