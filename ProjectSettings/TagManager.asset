@@ -12,6 +12,7 @@ TagManager:
   - DialogueTrigger
   - NoDamage
   - Boss
+  - EBullet
   layers:
   - Default
   - TransparentFX

@@ -25,7 +25,7 @@ GameObject:
   - component: {fileID: 61961736989713046}
   m_Layer: 10
   m_Name: Bullet
-  m_TagString: Untagged
+  m_TagString: EBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -101,7 +101,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletSpeed: 300
   destroyOnCollisionTag: Player
-  addedForce: 0
+  addedForce: 1
+  damage: 34
 --- !u!212 &212763643470690240
 SpriteRenderer:
   m_ObjectHideFlags: 1

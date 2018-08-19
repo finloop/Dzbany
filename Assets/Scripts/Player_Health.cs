@@ -42,6 +42,20 @@ public class Player_Health : MonoBehaviour
 
     }
 
+    public void RestoreHealth()
+    {
+        if (gameObject.tag.Equals("Player"))
+        {
+            health = 100;
+            gameObject.tag = "NoDamage";
+            gameObject.GetComponent<SpriteRenderer>().color = Color.green;
+            GameObject healthBar = GameObject.Find("Canvas/Mask/Health");
+            healthBar.GetComponent<Image>().fillAmount = 1f - (health / 100f);
+            StartCoroutine(SetTag(gameObject));
+        }
+
+    }
+
     IEnumerator SetTag(GameObject gameObject)
     {
         yield return new WaitForSecondsRealtime(0.4f);

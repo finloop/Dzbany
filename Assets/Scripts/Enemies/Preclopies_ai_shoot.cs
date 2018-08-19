@@ -100,7 +100,7 @@ public class Preclopies_ai_shoot : MonoBehaviour
             {
                 if (collision.collider.tag.Equals("Player"))
                 {
-                    collision.gameObject.GetComponent<Player_Health>().TakeDamage(34);
+                    collision.gameObject.GetComponent<Player_Health>().TakeDamage(20);
                 }
 
             }
@@ -142,7 +142,7 @@ public class Preclopies_ai_shoot : MonoBehaviour
             {
                 if (collision.collider.tag.Equals("Player"))
                 {
-                    collision.gameObject.GetComponent<Player_Health>().TakeDamage(34);
+                    collision.gameObject.GetComponent<Player_Health>().TakeDamage(20);
                 }
 
             }
