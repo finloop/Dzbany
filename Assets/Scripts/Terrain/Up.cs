@@ -37,7 +37,6 @@ public class Up : MonoBehaviour {
             gameObject.GetComponent<BoxCollider2D>().enabled = false;
             gameObject.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0f);
             isInvisible = true;
-            
         }
 
     }

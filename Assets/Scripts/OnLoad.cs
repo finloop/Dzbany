@@ -3,8 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class OnLoad : MonoBehaviour {
+public class OnLoad : MonoBehaviour
+{
     public Transform position;
+    public AudioSource audioSource;
+    public AudioClip audioClip;
 
     void OnEnable()
     {
@@ -20,19 +23,32 @@ public class OnLoad : MonoBehaviour {
 
     void OnLevelFinishedLoading(Scene scene, LoadSceneMode mode)
     {
-    if(GlobalVariables.scenes_positions != null)
-    foreach (KeyValuePair<string, Vector3> kvp in GlobalVariables.scenes_positions ){
-        if(kvp.Key.Equals(scene.name)) {
-            position.position = kvp.Value;
-            return;
+        if ((gameObject.GetComponent<AudioSource>() != null) && (audioClip != null))
+        {
+            audioSource.clip = audioClip;
+            audioSource.loop = true;
+            audioSource.Play();
         }
-    } 
-    StartCoroutine(start());
-    
+        if (!scene.name.Equals("youdied"))
+        {
+            if (GlobalVariables.scenes_positions != null)
+                foreach (KeyValuePair<string, Vector3> kvp in GlobalVariables.scenes_positions)
+                {
+                    if (kvp.Key.Equals(scene.name))
+                    {
+                        position.position = kvp.Value;
+                        return;
+                    }
+                }
+        }
+
+        StartCoroutine(start());
+
     }
 
-	IEnumerator start() {
-		yield return new WaitForSecondsRealtime(1);
-					GetComponent<DialogueTrigger>().TriggerDialogue();
-	}
+    IEnumerator start()
+    {
+        yield return new WaitForSecondsRealtime(1);
+        GetComponent<DialogueTrigger>().TriggerDialogue();
+    }
 }
