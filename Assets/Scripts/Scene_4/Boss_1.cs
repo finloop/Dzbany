@@ -25,6 +25,16 @@ public class Boss_1 : MonoBehaviour
                 gameObject.GetComponent<DialogueTrigger>().TriggerDialogue();
                 startPhase1 = !startPhase1;
                 isSpawning = true;
+                GameObject[] objects = GameObject.FindGameObjectsWithTag("EBullet");
+                GameObject[] objects1 = GameObject.FindGameObjectsWithTag("Enemy");
+                foreach (GameObject g in objects)
+                {
+                    Destroy(g);
+                }
+                foreach (GameObject g in objects1)
+                {
+                    Destroy(g);
+                }
             }
             // ACTIVATE PHASE 1
 
@@ -49,6 +59,16 @@ public class Boss_1 : MonoBehaviour
         if(GetComponent<Enemy_Base>().health <= 0) {
             GameObject exit = GameObject.Find("Exit");
             exit.GetComponent<DialogueTrigger>().TriggerDialogue();
+            GameObject[] objects = GameObject.FindGameObjectsWithTag("EBullet");
+            GameObject[] objects1 = GameObject.FindGameObjectsWithTag("Enemy");
+            foreach (GameObject g in objects)
+            {
+                Destroy(g);
+            }
+            foreach (GameObject g in objects1)
+            {
+                Destroy(g);
+            }
             Destroy(gameObject);
         }
     }
