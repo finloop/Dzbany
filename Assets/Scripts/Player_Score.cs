@@ -24,6 +24,8 @@ public class Player_Score : MonoBehaviour {
                 GlobalVariables.scenes_positions.Add(new KeyValuePair<string, Vector3>(gameObject.scene.name, gameObject.transform.position));
             else
                 GlobalVariables.scenes_positions[i] = new KeyValuePair<string, Vector3>(gameObject.scene.name, gameObject.transform.position);
+
+            gameObject.GetComponent<Player_Health>().RestoreHealth();
             Destroy(collision.gameObject);
         } else if (collision.gameObject.tag.Equals("DialogueTrigger"))
         {

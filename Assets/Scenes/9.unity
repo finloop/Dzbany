@@ -891,7 +891,7 @@ Prefab:
     - target: {fileID: 114844969255731884, guid: 23011e549ccb6f24b9f5a9033134cdf9,
         type: 2}
       propertyPath: dialogue.senetnces.Array.data[1]
-      value: "Jakto kto\u015B ci\u0119 oszuka\u0142?"
+      value: "Jak to kto\u015B ci\u0119 oszuka\u0142?"
       objectReference: {fileID: 0}
     - target: {fileID: 114844969255731884, guid: 23011e549ccb6f24b9f5a9033134cdf9,
         type: 2}

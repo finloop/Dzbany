@@ -51,4 +51,5 @@ public class OnLoad : MonoBehaviour
         yield return new WaitForSecondsRealtime(1);
         GetComponent<DialogueTrigger>().TriggerDialogue();
     }
+
 }

@@ -15,8 +15,10 @@ public class Player_Movement : MonoBehaviour {
     // Update is called once per frame
     void Update () {
         RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down);
-        if (hit != null && hit.collider != null && hit.distance < 1.27f && hit.collider.tag.Equals("Ground"))
+        if (hit != null && hit.collider != null && hit.distance <= 0.9f && hit.collider.tag.Equals("Ground"))
+        {
             isGrounded = true;
+        }
         else
             isGrounded = false;
 
@@ -29,7 +31,7 @@ public class Player_Movement : MonoBehaviour {
         moveX = Input.GetAxis("Horizontal");
         if (Input.GetAxis("Vertical")<0)
             Jump();
-        //animation
+        //animation+
         //player direction
         //phisics
         gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(moveX * playerSpeed, gameObject.GetComponent<Rigidbody2D>().velocity.y);

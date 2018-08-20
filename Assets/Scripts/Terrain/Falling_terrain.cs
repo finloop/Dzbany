@@ -7,6 +7,7 @@ public class Falling_terrain : MonoBehaviour {
     private float currentTime = 0f;
     private float animationTime = 2f;
     private bool isInvisible = false;
+    bool startedC = false;
 
 
 	// Use this for initialization
@@ -30,12 +31,17 @@ public class Falling_terrain : MonoBehaviour {
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        StartCoroutine(doSomething(gameObject, collision));
+        if (!startedC && collision.gameObject.name.Equals("Player"))
+        {
+            StartCoroutine(doSomething(gameObject, collision));
+        }
+
         
     }
 
     IEnumerator doSomething(GameObject gameObject, Collision2D collision)
     {
+        startedC = true;
         yield return new WaitForSecondsRealtime(0.5F);
         if (collision.gameObject.name.Equals("Player") && !isInvisible)
         {
@@ -43,5 +49,6 @@ public class Falling_terrain : MonoBehaviour {
             gameObject.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0f);
             isInvisible = true;
         }
+        startedC = false;
     }
 }

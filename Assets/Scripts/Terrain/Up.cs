@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Up : MonoBehaviour {
     private float currentTime = 0f;
-    private float animationTime = 2f;
+    public float animationTime = 2f;
     private bool isInvisible = false;
 
 

@@ -911,7 +911,7 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "Pomys\u0142:\nPiotr Krawiec @Lordozopl\n\nTw\xF3rca:\nPiotr Krawiec @Lordozopl\n\nMuzyka:\nfreemusicarchive.org
-    & youtube\n\nTestowa\u0142:\nAlan Drabarek @Zempacz\n\n"
+    & youtube\n\nTestowa\u0142 i szuka\u0142 b\u0142\u0119d\xF3w:\nAlan Drabarek @Zempacz\n\n"
 --- !u!222 &2007477157
 CanvasRenderer:
   m_ObjectHideFlags: 0

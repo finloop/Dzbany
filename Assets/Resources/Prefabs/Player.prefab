@@ -181,6 +181,7 @@ MonoBehaviour:
   isGrounded: 0
   maxSpeedHorizontal: 0
   maxSpeedVertical: 0
+  canDoubleJump: 0
 --- !u!114 &114635621266085680
 MonoBehaviour:
   m_ObjectHideFlags: 1
